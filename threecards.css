@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2021, 8:42:50 PM
+    Author     : m.abusnaimeh
+*/
+
+.container{
+    width: 70vw;
+    margin: auto;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns:repeat(3,1fr)
+}
+
+@media(max-width:768px){
+    .container{
+    
+    grid-template-columns:repeat(1,1fr)
+}
+}
+
+
+
+h1,h2,h3,h4,img,p{
+    margin: 0;
+    padding: 0;
+    color: white;
+   
+}
+
+
+.container .card{
+    padding: 20px 30px;
+}
+.container .card img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+.container .card h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container .card:first-child{
+    background-color:#e28525;
+}
+.container .card:first-child a{
+    color:#e28525;
+}
+.container .card:nth-child(2){
+    background-color: #016972;
+}
+.container .card:nth-child(2) a{
+    color: #016972;
+}
+.container .card:last-child{
+    background-color: #00403f;
+}
+.container .card:last-child a{
+    color: #00403f;
+}
+.container .card-contant{
+    display: flex;
+    flex-direction: column;
+}
+.container .card-contant>p{
+    line-height: 2;
+    height: 200px;
+}
+
+.container .card-contant>a{
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #f2f1f1;
+    width: 50%;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 23px;
+}
